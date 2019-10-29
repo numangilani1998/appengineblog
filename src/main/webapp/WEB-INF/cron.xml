@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+	<cron>
+	<url>/cronEmailServlet</url>
+	<description>Cron Emails every day at 5PM</description>
+	<schedule>every day 17:00</schedule>
+	<timezone>America/Chicago</timezone>
+	</cron>
+</cronentries>
