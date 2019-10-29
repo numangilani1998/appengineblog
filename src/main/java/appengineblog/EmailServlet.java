@@ -35,6 +35,12 @@ public class EmailServlet extends HttpServlet {
 
         User user = userService.getCurrentUser();
         
+        if(user == null) {
+        	_logger.info("Attempted to subscribe/unsubscribe while not signed in");
+        	resp.sendRedirect("/index.jsp");
+        	return;
+        }
+        
         ObjectifyService.register(Subscriber.class);
 
         String willSubscribe = req.getParameter("willSubscribe");

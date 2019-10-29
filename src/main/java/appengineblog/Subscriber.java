@@ -11,6 +11,8 @@ public class Subscriber {
 	@Parent Key<Blog> guestbookName;
     @Id Long id;
     @Index String email;
+    
+    public Subscriber() {}
 
     public Subscriber(String email) {
         this.email = email;
