@@ -26,6 +26,8 @@
 			<h1>
 				<a href="index.jsp" id="main_title">Blog app</a>
 			</h1>
+			
+			<img src="blogimage.png" alt="blog image" >
 	  	</div>
 	
 		<div class="grid">
